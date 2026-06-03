@@ -5,4 +5,4 @@ resources:
       tasks:
         - task_key: ingest_task
           notebook_task:
-            notebook_path: ./bronze/ingest.ipynb
+            notebook_path: ./bronze
