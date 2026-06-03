@@ -1,8 +1,1 @@
-resources:
-  jobs:
-    bronze_job:
-      name: abcd_job
-      tasks:
-        - task_key: ingest_task
-          notebook_task:
-            notebook_path: ./bronze/ingest.ipynb
+# empty
