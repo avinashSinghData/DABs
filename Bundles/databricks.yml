@@ -1,10 +1,6 @@
 bundle:
   name: test_bundles
 
-- name: Debug structure
-  run: |
-    pwd
-    ls -R
 
 resources:
   jobs:
