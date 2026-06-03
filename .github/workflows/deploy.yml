@@ -16,10 +16,11 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
 
-      - name: Deploy Bundle
+      - name: Validate and Deploy Bundle
+        working-directory: bundles
         env:
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
           DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
         run: |
           databricks bundle validate
-          databricks bundle deploy 
+          databricks bundle deploy --target test
