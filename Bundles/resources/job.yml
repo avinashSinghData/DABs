@@ -1,6 +1,8 @@
 resources:
   jobs:
-    databricks_yml:
-      name: databricks.yml
-      queue:
-        enabled: true
+    bronze_job:
+      name: bronze_job
+      tasks:
+        - task_key: ingest_task
+          notebook_task:
+            notebook_path: ./bronze/ingest.ipynb
