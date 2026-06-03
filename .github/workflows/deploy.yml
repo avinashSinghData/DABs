@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+- name: Debug structure
+  run: |
+    ls -R
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
